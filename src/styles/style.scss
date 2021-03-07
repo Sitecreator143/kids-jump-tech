@@ -1,16 +1,20 @@
 @import "./base/normalize.scss";
 @import "./base/nullstyle.scss";
+@import "./style/main.scss";
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Dosis', sans-serif;
   font-weight: 400;
-  font-size: 1rem;
-  color: black;
+  color: #FFFFFF;
 }
 
-.container {
+/* .container {
   width: 100%;
   max-width: 1200px;
   padding: 0 20px;
   margin: 0 auto;
-}
+} */
+
+
+
+

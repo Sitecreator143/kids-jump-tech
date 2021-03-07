@@ -1,0 +1,44 @@
+.main {
+  overflow: hidden;
+  position: relative;
+  width: 100vw;
+  height: calc(100vw * 0.68);
+  background: url("../img/main/illustration.png"), url("../img/main/bg.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.main__logo-bg {
+  height: calc(100vw);
+  width: calc(100vw * 0.38);
+  position: fixed;
+  top: -390px;
+  left: -185px;
+  background: url("../img/main/logo-bg.png");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (max-width: 1919px) {
+  .main__logo-bg {
+    top: -311px;
+    left: -280px;
+  }
+}
+
+@media (max-width: 1439px) {
+  .main__logo-bg {
+    top: -152px;
+    left: -149px;
+  }
+}
+
+@media (max-width: 767px) {
+  .main__logo-bg {
+    top: -79px;
+    left: -64px;
+  }
+}
+
