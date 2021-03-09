@@ -406,6 +406,7 @@ $white: #FFFFFF;
 
   .main__burger {
     position: absolute;
+    cursor: pointer;
     top: 28px;
     left: calc(100vw * 0.3653);
     display: flex;
