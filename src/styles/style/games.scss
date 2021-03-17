@@ -60,33 +60,37 @@ $games-item-skill: #9594AA;
     top: 285px;
     background-color: $games-white;
     border-radius: 40px;
-    &:active {
-      box-shadow: inset 0px 4px 10px rgba(61, 70, 118, 0.2);
-    }
-    .games__icon {
+    &:before {
+      content: "";
       height: 36px;
       width: 36px;
       background: url("../img/games/btn-icon.svg");
       background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
-      &:hover {
-        background: url("../img/games/btn-icon_hover.svg");
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
     }
-    .games__view {
+    &:after {
+      content: "View all games";
       font-weight: 600;
       font-size: 20px;
       line-height: 120%;
       text-transform: uppercase;
       color: $games-view;
-      &:hover {
+    }
+    &:hover {
+      &:before {
+        background: url("../img/games/btn-icon_hover.svg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      &:after {
         color: $games-view-hover;
       }
-      &:active {
+    }
+    &:active {
+      box-shadow: inset 0px 4px 10px rgba(61, 70, 118, 0.2);
+      &:after {
         color: $games-view;
       }
     }
